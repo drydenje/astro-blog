@@ -17,6 +17,11 @@ collections:
       # - { label: "Layout", name: "layout", widget: "hidden", default: "posts" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Publish Date",
+          name: "pubDate",
+          widget: "datetime",
+          date_format: "MMM.DD.YYYY", # Day.js format
+        }
       - { label: "Hero Image", name: "heroImage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
